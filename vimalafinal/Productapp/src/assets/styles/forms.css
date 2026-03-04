@@ -1,0 +1,112 @@
+/* ---------- FORM PAGE LAYOUT ---------- */
+
+.page{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  min-height:80vh;
+}
+
+
+/* ---------- FORM CARD ---------- */
+
+.form-card{
+  width:380px;
+  background:#ffffff;
+  padding:40px 35px;
+  border-radius:12px;
+  box-shadow:0 10px 30px rgba(0,0,0,0.08);
+  display:flex;
+  flex-direction:column;
+  gap:15px;
+}
+
+
+/* ---------- TITLE ---------- */
+
+.form-card h2{
+  text-align:center;
+  color:#2C2C2C;
+  font-weight:600;
+  margin-bottom:10px;
+}
+
+
+/* ---------- INPUT FIELDS ---------- */
+
+.form-card input{
+  width:100%;
+  padding:12px 14px;
+  border-radius:6px;
+  border:1px solid #ddd;
+  font-size:14px;
+  transition:all .2s ease;
+  background:#F3F4F4;
+}
+
+.form-card input:focus{
+  outline:none;
+  border-color:#853953;
+  background:white;
+  box-shadow:0 0 0 2px rgba(133,57,83,0.1);
+}
+
+
+/* ---------- BUTTON ---------- */
+
+.form-card button{
+  width:100%;
+  padding:12px;
+  border:none;
+  border-radius:6px;
+  background:#853953;
+  color:white;
+  font-weight:500;
+  font-size:15px;
+  cursor:pointer;
+  transition:all .2s ease;
+}
+
+.form-card button:hover{
+  background:#612D53;
+}
+
+
+/* ---------- ERROR MESSAGE ---------- */
+
+.form-error{
+  font-size:13px;
+  color:#d22;
+  text-align:center;
+}
+
+
+/* ---------- FORM FOOTER ---------- */
+
+.form-footer{
+  text-align:center;
+  font-size:14px;
+  margin-top:5px;
+}
+
+.form-footer a{
+  color:#853953;
+  text-decoration:none;
+  font-weight:500;
+}
+
+.form-footer a:hover{
+  text-decoration:underline;
+}
+
+
+/* ---------- SMALL SCREEN ---------- */
+
+@media (max-width:500px){
+
+  .form-card{
+    width:90%;
+    padding:30px 25px;
+  }
+
+}
